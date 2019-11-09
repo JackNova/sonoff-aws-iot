@@ -1,0 +1,4 @@
+export SONOFF_SERIAL_ADDR="..."
+export AWS_IOT_ENDPOINT="...-ats.iot.eu-central-1.amazonaws.com"
+export SONOFF_BUILD_PATH=".../.pioenvs/sonoff/firmware.bin"
+export SONOFF_TOPIC="sonoff/Tasmota-..."
