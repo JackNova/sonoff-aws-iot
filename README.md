@@ -326,7 +326,10 @@ Nell'output in console si dovrebbe avere evidenza del collegamento all'endpoint 
 
 e veder arrivare i messaggi inoltrati dal Sonoff facendo click sul suo pulsante.
 
+Esempio di invio del comando di spegnimento:
 
+Topic: 		cmnd/sonoff/Tasmota-01/POWER 
+Payload: 	ON
 
 ## Note Varie
 
@@ -380,3 +383,4 @@ Il Sonoff va messo in serie con la lampada ed i centrali dei deviatori ai capi d
 ## Collegamento impianto con relè
 
 ![relè](sonoff-relay-27.01.svg)
+
