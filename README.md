@@ -318,7 +318,13 @@ echo "Backlog SetOption3 1; MqttHost $AWS_IOT_ENDPOINT; MqttPort 8883; Topic $SO
 
 ### Verificare il funzionamento
 
-Nell'output in console si dovrebbe avere evidenza del collegamento all'endpoint AWS IoT, inoltre, dalla console di AWS IoT, nella sezione **Test** si può provare ad iscriversi al topic
+Nell'output in console si dovrebbe avere evidenza del collegamento all'endpoint AWS IoT.
+
+ 
+
+#### Test di ricezione dei comandi
+
+Dalla console di AWS IoT, nella sezione **Test** si può provare ad iscriversi al topic
 
 ```
 +/sonoff/#
@@ -326,10 +332,23 @@ Nell'output in console si dovrebbe avere evidenza del collegamento all'endpoint 
 
 e veder arrivare i messaggi inoltrati dal Sonoff facendo click sul suo pulsante.
 
+| Carattere | Significato (MQTT topic)                     |
+| --------- | -------------------------------------------- |
+| +         | Wildcard per un solo livello di profondità   |
+| #         | Wildcard per qualsiasi livello di profondità |
+
+
+
+#### Test di invio dei comandi
+
 Esempio di invio del comando di spegnimento:
 
+```
 Topic: 		cmnd/sonoff/Tasmota-01/POWER 
 Payload: 	ON
+```
+
+
 
 ## Note Varie
 
