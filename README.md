@@ -27,11 +27,19 @@ brew install esptool
 
 ### Saldatura header
 
+
+
+#### Sonoff Basic
+
 Al fine di poter collegare l'interfaccia USB-SERIALE al Sonoff è necessario saldare sulla scheda un pitch header a 4 pin da 2.54mm.
 
 
 
 ### Schema di collegamento
+
+
+
+#### Sonoff Basic
 
 Nel mio caso, l'interfaccia USB-SERIALE è predisposta per l'inserimento diretto di un ESP-8266, da questo si può derivare la distribuzione dei piedini
 
